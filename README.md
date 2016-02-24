@@ -1,0 +1,2 @@
+# BuildInsider_DeviceMotion
+DeviceMotion説明用のレポジトリです。
