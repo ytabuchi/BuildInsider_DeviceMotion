@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BI_Accelerometer.MainPageXaml">
+  <ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness"
+                iOS="10, 20, 10, 0"
+                Android="10, 0, 10, 0"
+                WinPhone="10, 0, 10, 0" />
+  </ContentPage.Padding>
+  <StackLayout>
+    <Label x:Name="xLabel" Text="x = " />
+    <Label x:Name="xLabel" Text="y = " />
+    <Label x:Name="zLabel" Text="z = " />
+    <Button Text="Start" Clicked="StartClicked" />
+    <Button Text="Stop" Clicked="StopClicked" />
+  </StackLayout>
+</ContentPage>
