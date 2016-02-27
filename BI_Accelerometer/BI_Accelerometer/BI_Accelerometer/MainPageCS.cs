@@ -27,7 +27,7 @@ namespace BI_Accelerometer
             zLabel = new Label { Text = "z = " };
 
             startButton = new Button { Text = "Start" };
-            startButton.Clicked += (s, _) =>
+            startButton.Clicked += (_, __) =>
             {
                 motion.Start(MotionSensorType.Accelerometer, MotionSensorDelay.Default);
                 if (motion.IsActive(MotionSensorType.Accelerometer))
@@ -45,7 +45,7 @@ namespace BI_Accelerometer
             };
 
             stopButton = new Button { Text = "Stop" };
-            stopButton.Clicked += (sender, e) =>
+            stopButton.Clicked += (_, __) =>
             {
                 motion.Stop(MotionSensorType.Accelerometer);
             };

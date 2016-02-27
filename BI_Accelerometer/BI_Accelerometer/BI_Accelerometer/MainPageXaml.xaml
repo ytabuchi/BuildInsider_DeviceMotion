@@ -10,7 +10,7 @@
   </ContentPage.Padding>
   <StackLayout>
     <Label x:Name="xLabel" Text="x = " />
-    <Label x:Name="xLabel" Text="y = " />
+    <Label x:Name="yLabel" Text="y = " />
     <Label x:Name="zLabel" Text="z = " />
     <Button Text="Start" Clicked="StartClicked" />
     <Button Text="Stop" Clicked="StopClicked" />

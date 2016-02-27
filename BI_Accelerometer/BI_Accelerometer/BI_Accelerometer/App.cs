@@ -11,7 +11,7 @@ namespace BI_Accelerometer
     {
         public App()
         {
-            MainPage = new MainPageCS();
+            MainPage = new MainPageXaml();
         }
 
         protected override void OnStart()
