@@ -30,8 +30,10 @@ namespace BI_Gyroscope
             {
                 motion.SensorValueChanged += (object s, SensorValueChangedEventArgs v) =>
                 {
-                    // 乱暴ですが、GyroscopeのYの絶対値が4を超えた回数が4回以上（2回シェイク）でシェイクと判定しています。
+                    // 乱暴ですが、Gyroscopeの各絶対値が4を超えた回数が4回以上（2回シェイク）でシェイクと判定しています。
+                    gyroData.Add(((MotionVector)v.Value).X);
                     gyroData.Add(((MotionVector)v.Value).Y);
+                    gyroData.Add(((MotionVector)v.Value).Z);
                     var shake = gyroData.Where(gyroData => Math.Abs(gyroData) > 4).Count();
                     if (shake > 3)
                     {
