@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="8dp">
+    <TextView
+        android:text="x = "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/xLabel" />
+    <TextView
+        android:text="y = "
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/yLabel" />
+    <TextView
+        android:text="z ="
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/zLabel" />
+    <Button
+        android:id="@+id/StartButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start" />
+    <Button
+        android:text="Stop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/StopButton" />
+</LinearLayout>
