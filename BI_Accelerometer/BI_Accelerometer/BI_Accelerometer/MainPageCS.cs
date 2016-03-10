@@ -34,6 +34,8 @@ namespace BI_Accelerometer
                 {
                     motion.SensorValueChanged += (object sender, SensorValueChangedEventArgs e) =>
                     {
+                        System.Diagnostics.Debug.WriteLine("X:{0}, Y:{1}, Z:{2}", ((MotionVector)e.Value).X, ((MotionVector)e.Value).Y, ((MotionVector)e.Value).Z);
+
                         Device.BeginInvokeOnMainThread(() =>
                         {
                             xLabel.Text = ((MotionVector)e.Value).X.ToString("0.0000");
