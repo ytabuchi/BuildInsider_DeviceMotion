@@ -9,7 +9,9 @@
                 WinPhone="10, 0, 10, 0" />
   </ContentPage.Padding>
   <StackLayout>
-    <Label x:Name="compassLabel" Text="Angle = " />
+    <Frame Padding="30">
+      <Label x:Name="angleLabel" Text="Angle" FontSize="40" HorizontalTextAlignment="Center" />
+    </Frame>
     <Button Text="Start" Clicked="StartClicked" />
     <Button Text="Stop" Clicked="StopClicked" />
   </StackLayout>

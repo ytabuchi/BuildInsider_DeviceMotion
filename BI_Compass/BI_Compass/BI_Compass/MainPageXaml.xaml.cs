@@ -28,7 +28,7 @@ namespace BI_Compass
                 {
                     Device.BeginInvokeOnMainThread(() =>
                     {
-                        compassLabel.Text = string.Format($"{a.Value.Value:N0}");
+                        angleLabel.Text = string.Format($"{a.Value.Value:N0}°");
                     });
                 };
             }
